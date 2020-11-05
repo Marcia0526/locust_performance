@@ -1,0 +1,26 @@
+version: '3'
+services:
+  master:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8089:8089"
+    volumes:
+      - ./:/workdir
+    command: -f /workdir/locustfiles/dso_test_distribution.py --master -H https://dso-api-${env:-dev}-dot-days-sales-outstanding-265916.appspot.com
+    environment:
+      - env=${env:-dev}
+      - PYTHONPATH=${PYTHONPATH}
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/workdir
+    command: -f /workdir/locustfiles/dso_test_distribution.py --worker --master-host master
+    environment:
+      - env=${env:-dev}
+      - PYTHONPATH=${PYTHONPATH}
+

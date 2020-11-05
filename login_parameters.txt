@@ -1,0 +1,17 @@
+test:
+  login_url: "https://thoughtworks.oktapreview.com/oauth2/ausjs00lctzrNgRMj0h7/v1/token"
+  login_authorization: "Basic MG9hcXg5NzM5d3pTYWpXTlIwaDc6SFFRMGdxX3RDclhBd0g4cDhodTh6X0JLaTJqRFEyZjNlTVJMa3JIaw=="
+  login_grant_type: "client_credentials"
+  login_scope: "default_scope"
+
+dev:
+  login_url: "https://dev-320256.okta.com/oauth2/default/v1/token"
+  login_authorization: "Basic MG9hM2Z3Yzhzd2tpUTVXbUg0eDY6WURIdk5MM0syT21VdDhmZjFURlAwdlplTUZVNm1tMjQ1eXd4VEZhYw=="
+  login_grant_type: "client_credentials"
+  login_scope: "dso_api"
+
+prod:
+  login_url: "https://thoughtworks.okta.com/oauth2/default/v1/token"
+  login_authorization: "Basic MG9hMWlsd2ZmMWFTa0VIanIwaDg6ZWEyTHZzbkY4NlZtOFFqaFAyYmNyZjhEeFQtT19zUk1JakpvRHBQUg=="
+  login_grant_type: "client_credentials"
+  login_scope: "default_scope"

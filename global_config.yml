@@ -1,0 +1,17 @@
+test:
+  login_url: "XXXXXXXXX"
+  login_authorization: "XXXXXXXXX"
+  login_grant_type: "XXXXXXXXX"
+  login_scope: "XXXXXXXXX"
+
+dev:
+  login_url: "XXXXXXXXX"
+  login_authorization: "XXXXXXXXX"
+  login_grant_type: "XXXXXXXXX"
+  login_scope: "XXXXXXXXX"
+
+prod:
+  login_url: "XXXXXXXXX"
+  login_authorization: "XXXXXXXXX"
+  login_grant_type: "XXXXXXXXX"
+  login_scope: "XXXXXXXXX"
